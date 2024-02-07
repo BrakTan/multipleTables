@@ -1,0 +1,36 @@
+/*body{
+    height: 100vh;
+    width: 100vw;
+}*/
+
+.ctn{
+    margin:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.table{
+    background-color: brown;
+    text-align: center;
+    padding: 0.3rem;
+    color: white;
+    margin-bottom: 0.2rem;
+    border-radius: 25%;
+}
+
+.multipleExercice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.minuteur{
+    font-size: 2rem;
+}
+
+.timerButton{
+    border: 1px solid red;
+}
