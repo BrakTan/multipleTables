@@ -1,7 +1,6 @@
-/*body{
-    height: 100vh;
-    width: 100vw;
-}*/
+body{
+    background-color: hsl(271, 100%, 90%);
+}
 
 .ctn{
     margin:10px;
@@ -11,12 +10,18 @@
 }
 
 .table{
-    background-color: brown;
+    background-color: #0b5ed7;
+    /*background-image: url( "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 800 800'%3E%3Cg fill='hsl(190, 100%, 70%)' transform='matrix(1,0,0,1,10,20)'%3E%3Cpath d='M 150 350 A 62 62 0 1 1 200 200 A 62 62 0 1 1 350 200 A 62 62 0 1 1 550 300 A 62 62 0 1 1 600 400 A 62 62 0 1 1 550 500 A 62 62 0 1 1 350 450 A 62 62 0 1 1 150 350 Z' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/g%3E%3E" );*/
     text-align: center;
-    padding: 0.3rem;
+    padding: 0.3rem 0.8rem;
     color: white;
     margin-bottom: 0.2rem;
     border-radius: 25%;
+}
+
+.table:hover{
+    cursor: pointer;
+    background-color: #0a58ca;
 }
 
 .multipleExercice{
@@ -24,7 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
+    font-size: 8rem;
 }
 
 .minuteur{
@@ -33,4 +38,11 @@
 
 .timerButton{
     border: 1px solid red;
+}
+
+.cloud{
+    border: 1px solid red;
+    padding: 0;
+    height: 7rem;
+    width: 7rem;
 }
