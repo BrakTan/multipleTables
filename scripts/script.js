@@ -13,6 +13,7 @@ tableButton.forEach((table) => {
     table.addEventListener('click', function() {
         tableValue = table.getAttribute('value');
         nextButton.innerHTML = 'Commencer';
+        exercice.style.fontSize = '8rem';
         exercice.innerHTML = 'Prêt ?';
         score = -1;
         nextButton.removeAttribute('disabled');
@@ -30,13 +31,13 @@ nextButton.addEventListener("click", function() {
     console.log(tableValue);
     let order = Math.round(Math.random()*2);
     let multiple = Math.ceil(Math.random()*10);
-    exercice.innerHTML = order <= 1 ? tableValue+'X'+multiple : multiple+'X'+tableValue;
+    exercice.innerHTML = order <= 1 ? tableValue+'x'+multiple : multiple+'X'+tableValue;
 });
 
 function runExercice(){
     let order = Math.round(Math.random()*2);
     let multiple = Math.ceil(Math.random()*10);
-    exercice.innerHTML = order <= 1 ? tableValue+'X'+multiple : multiple+'X'+tableValue;
+    exercice.innerHTML = order <= 1 ? tableValue+'x'+multiple : multiple+'X'+tableValue;
     nextButton.removeAttribute('disabled');
     launchTimer();
 }
@@ -58,6 +59,7 @@ function launchTimer(){
     if(timeRemaining <= 0){
         clearInterval(timeInterval);
         nextButton.setAttribute('disabled', '');
+        exercice.style.fontSize = '5rem';
         if(score > 0){
             exercice.innerHTML = 'Bravo ! Ton score est de '+score; 
         }
